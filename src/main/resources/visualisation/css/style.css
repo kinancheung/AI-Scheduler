@@ -1,0 +1,6 @@
+.panel {
+    -fx-background-radius: 16;
+}
+.label {
+    -fx-text-fill: white;
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane style="-fx-background-color: #312f31;" styleClass="panel" stylesheets="@../css/style.css" vgap="4.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualisation.controller.StatisticsController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+   </rowConstraints>
+   <children>
+      <Label text="Statistics" textFill="#e8e8e8" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding></Label>
+      <GridPane style="-fx-background-color: #3d3c3c;" styleClass="panel" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="48.0" minWidth="48.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="NEVER" maxWidth="1.7976931348623157E308" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Tasks" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="tasksLabel" alignment="CENTER_RIGHT" text="Label" textAlignment="RIGHT" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/project-diagram-solid.png" />
+               </image>
+            </ImageView>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </GridPane>
+      <GridPane styleClass="panel" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="48.0" minWidth="48.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" />
+            <ColumnConstraints halignment="RIGHT" hgrow="NEVER" maxWidth="1.7976931348623157E308"  />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Memory Usage" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="memoryLabel" alignment="CENTER_RIGHT" text="Label" textAlignment="RIGHT" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/memory-solid.png" />
+               </image>
+            </ImageView>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </GridPane>
+      <GridPane styleClass="panel" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="48.0" minWidth="48.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="NEVER" maxWidth="1.7976931348623157E308" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Processors" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="processorsLabel" alignment="CENTER_RIGHT" text="Label" textAlignment="RIGHT" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../images/microchip-solid.png" />
+               </image>
+            </ImageView>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </GridPane>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #3d3c3c;" styleClass="panel" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="48.0" minWidth="48.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="NEVER" maxWidth="-Infinity" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Time Elapsed" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeLabel" alignment="CENTER_RIGHT" text="Label" textAlignment="RIGHT" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@../images/clock-regular.png" />
+               </image>
+            </ImageView>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </GridPane>
+   </children>
+   <padding>
+      <Insets bottom="16.0" left="16.0" right="16.0" top="8.0" />
+   </padding>
+</GridPane>

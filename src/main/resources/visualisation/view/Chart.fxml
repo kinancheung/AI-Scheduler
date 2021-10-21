@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualisation.controller.Chart">
+   <children>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #312f31;" styleClass="panel">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <Text fx:id="text" fill="#e8e8e8" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Optimal Schedule" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="8.0" />
+               </GridPane.margin>
+            </Text>
+            <GridPane fx:id="chartContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+              </columnConstraints>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="8.0" />
+         </padding>
+      </GridPane>
+      <AnchorPane maxHeight="48.0" StackPane.alignment="TOP_LEFT">
+         <children>
+            <HBox fx:id="taskInfo" fillHeight="false" spacing="8.0" visible="false" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+               <children>
+                  <Text fx:id="taskInfoName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="task">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Time">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="taskInfoStart" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="End Time">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="taskInfoEnd" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+         <StackPane.margin>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="8.0" />
+         </StackPane.margin>
+      </AnchorPane>
+   </children>
+</StackPane>
